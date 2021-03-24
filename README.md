@@ -1,0 +1,1 @@
+I created this repository for the rock paper scissors JavaScript game viewed on The Odin Project. It will be console based at first, but will include a UI in the future.
