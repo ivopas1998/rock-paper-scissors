@@ -30,15 +30,15 @@ while(playerScore !== rounds && computerScore !== rounds) {
 //if they choose anything else, let them know the choice is invalid
 //make sure that the players choice is case insensitive
     function playerPlay() {
-        let playerChoices = prompt('Choose rock, paper or scissors.');
-        playerChoices = playerChoices.toLowerCase();
+        let playerChoices = prompt('Choose from rock, paper or scissors.');
+        playerChoices = playerChoices && playerChoices.toLowerCase();
         let validPlayerChoice = false;
         while(validPlayerChoice == false) {
             if(playerChoices === 'rock' || playerChoices === 'paper'|| playerChoices === 'scissors') {
                 validPlayerChoice = true;
             } else {
                 playerChoices = prompt('That\'s an invalid choice! \nPlease pick from either rock, paper or scissors!');
-                playerChoices = playerChoices.toLowerCase();
+                playerChoices = playerChoices && playerChoices.toLowerCase();
             }
         }
         return playerChoices;
